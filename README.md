@@ -58,4 +58,4 @@ Pour la realisation de ce projet, nous avons utilisé HTML,CSS,php et javaScript
 Ce projet m'a permis de decouvrir pleins de choses en php,HTML,css et javaScript et d'acquerir de nouvelles competences.
 J'ai eu d'enormes difficultés au cours de ce projet, mais heureusement les formateurs de la sonatel academy etaient tous là particulierment Monsieur mbaye qui n'a menagé aucun effort pour la reussite de ce travail.
 Merciiiiiiiiiiiiiii.
-
+lien deploiement:lamanesa.alwaysdata.net
