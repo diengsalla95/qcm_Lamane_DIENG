@@ -143,21 +143,6 @@ if (!isset($_SESSION['user'])) {
 					?>
 					</table>
 				</div>
-					
-					<?php 
-					if (isset($_POST['jeux'])) {
-						$_SESSION['tab']=array();
-						$_SESSION['score']=array();
-						for($i=0;count($_SESSION['tab'])<$point['pointFixe'];$i++) {
-							$r=$tab[mt_rand(0,count($tab)-1)];
-							if(in_array($r, $_SESSION['tab'])){
-							}else{
-								array_push($_SESSION['tab'], $r);
-							}
-						}
-						header('location:interface_joueur.php');
-					}
-					?>
 			</div>
 			<div class="form_cont2">
                	<div><a class="topscore" href="?page=topscore"> Top score </a></div>
@@ -174,8 +159,22 @@ if (!isset($_SESSION['user'])) {
 			</div>
 			<div>
 				<form method="post">
-						<button type="submit" name="jeux" style="margin-top: 10px;position: relative;height: 25px"> Rejouer</button>
+					<button type="submit" name="jeux" style="margin-top: 10px;position: relative;height: 25px"> Rejouer</button>
 				</form>
+				<?php 
+					if (isset($_POST['jeux'])) {
+						$_SESSION['tab']=array();
+						$_SESSION['score']=array();
+						for($i=0;count($_SESSION['tab'])<$point['pointFixe'];$i++) {
+							$r=$tab[mt_rand(0,count($tab)-1)];
+							if(in_array($r, $_SESSION['tab'])){
+							}else{
+								array_push($_SESSION['tab'], $r);
+							}
+						}
+						header('location:interface_joueur.php');
+					}
+				?>
 			</div>
 			</div>
 		</div>
